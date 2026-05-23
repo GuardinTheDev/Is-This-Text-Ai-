@@ -1,0 +1,69 @@
+from transformers import AutoTokenizer, DataCollatorWithPadding
+from transformers import AutoModelForSequenceClassification, TrainingArguments, Trainer
+import torch
+import numpy as np
+from sklearn.metrics import accuracy_score, f1_score
+
+print("1. Tokenizer ve Dinamik Padding Ayarlanıyor...")
+model_name = "distilbert-base-uncased"
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+# DİKKAT: padding='max_length' kaldırıldı. Sadece kesme (truncation) yapıyoruz.
+def tokenize_fonksiyonu(examples):
+    return tokenizer(examples['text'], truncation=True, max_length=512)
+
+tokenized_datasets = {
+    'train': dataset['train'].map(tokenize_fonksiyonu, batched=True),
+    'validation': dataset['validation'].map(tokenize_fonksiyonu, batched=True)
+}
+
+# Data Collator: Verileri modele beslerken dinamik dolgu yapar (Eğitimi inanılmaz hızlandırır)
+data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
+
+print("2. Model Yükleniyor...")
+device = "cuda" if torch.cuda.is_available() else "cpu"
+model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=2).to(device)
+
+def compute_metrics(eval_pred):
+    logits, labels = eval_pred
+    predictions = np.argmax(logits, axis=-1)
+    acc = accuracy_score(labels, predictions)
+    f1 = f1_score(labels, predictions, average='binary')
+    return {"accuracy": acc, "f1": f1}
+
+print("3. Gelişmiş Eğitim Parametreleri Kuruluyor...")
+training_args = TrainingArguments(
+    output_dir="./ai_detector_local_results",
+    learning_rate=2e-5,
+    per_device_train_batch_size=16,
+    per_device_eval_batch_size=16,
+    num_train_epochs=3,
+    weight_decay=0.01,
+    eval_strategy="epoch",
+    save_strategy="epoch",
+    load_best_model_at_end=True,
+    logging_steps=50,       # Her adımda log basıp ekranı dondurmaması için 50'ye çıkarıldı
+    report_to="none",
+    fp16=True,              # [HIZ] GPU'yu tam kapasite kullanır
+    group_by_length=True,   # [HIZ] Benzer uzunlukları gruplayıp boşluk (pad) israfını önler
+    warmup_ratio=0.1,       # [GÜÇ] Eğitimin başında modelin sapıtmasını engeller
+)
+
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    train_dataset=tokenized_datasets['train'],
+    eval_dataset=tokenized_datasets['validation'],
+    tokenizer=tokenizer,
+    data_collator=data_collator, # Dinamik dolguyu eğitime dahil ediyoruz
+    compute_metrics=compute_metrics,
+)
+
+print("\n--- Optimize Edilmiş Model Eğitimi Başlıyor ---")
+trainer.train()
+
+# Modeli Google Drive'a kaydetme (Kendi Drive yolunuzu kontrol edin)
+drive_kayit_yolu = "/content/drive/MyDrive/en_iyi_detektor_modeli"
+trainer.save_model(drive_kayit_yolu)
+tokenizer.save_pretrained(drive_kayit_yolu)
+print(f"\nEğitim tamamlandı ve model Drive'a kaydedildi!")
