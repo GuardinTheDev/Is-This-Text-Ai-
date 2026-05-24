@@ -45,8 +45,8 @@ Bu projede geleneksel bir ilişkisel veritabanı (MySQL, PostgreSQL vb.) yerine,
 
 Projeyi kendi bilgisayarınızda veya Google Colab üzerinde çalıştırmak için aşağıdaki adımları izleyiniz:
 
-**Adım 1: Projeyi kendi bilgisayarınıza indirip kurmanıza gerek kalmadan, doğrudan tarayıcı üzerinden hızlıca test edebilmeniz için Google Colab altyapısı tercih edilmiştir.
-Projeyi Colab'da Açın: En yukarıdaki butona tıklayarak projenin kodlarını doğrudan Google Colab üzerinde açabilirsiniz.
+**Adım 1:** Projeyi kendi bilgisayarınıza indirip kurmanıza gerek kalmadan, doğrudan tarayıcı üzerinden hızlıca test edebilmeniz için Google Colab altyapısı tercih edilmiştir.
+**Projeyi Colab'da Açın:** En yukarıdaki butona tıklayarak projenin kodlarını doğrudan Google Colab üzerinde açabilirsiniz.
 
 **Adım 2: GPU'yu Aktif Edin (Önemli)** Eğer model eğtilmek isteniyorsa "Model Eğitim" bloğunda "YENIDEN_EGIT = False" kısmını "True" yapaarak modeli eğitebilirsiniz.Modelin hızlı çalışması için Colab açıldığında üst menüden **Çalışma Zamanı (Runtime) > Çalışma Zamanı Türünü Değiştir (Change runtime type)** seçeneğine tıklayın. Donanım Hızlandırıcıyı **T4 GPU** olarak seçip kaydedin.
 
