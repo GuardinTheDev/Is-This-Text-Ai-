@@ -1,5 +1,6 @@
 # Is-This-Text-Ai-
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GuardinTheDev/Is-This-Text-Ai-/blob/Model-E%C4%9Fitimi/ModelE%C4%9Fitimi.ipynb)
+
 Girilen metnin ai olup olmadığını tahmin eden algoritma
 Modelin eğitiminde Hugging Face üzerinde açık kaynak olarak paylaşılan Kaggle DAIGT V2 veri seti kullanılmıştır.
 
