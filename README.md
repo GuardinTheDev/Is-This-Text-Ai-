@@ -11,10 +11,11 @@ Bu proje, verilen bir metnin yapay zeka tarafından mı yoksa gerçek bir insan 
 
 Modelin eğitimi ve doğrulaması (validation) için aşağıdaki veri setleri harmanlanarak kullanılmıştır:
 
-1. **Kaggle DAIGT Veri Seti:** Yapay zeka ve insan tarafından yazılmış genel metinleri içerir.
-   * *Link:* [Yunij/kaggle-comp-daigt (Hugging Face)](https://huggingface.co/datasets/Yunij/kaggle-comp-daigt)
-2. **Wikitext (Wikipedia) Veri Seti:** Modelin "resmi ve ciddi dili" yapay zeka sanmasını engellemek için dengeleyici (insan metni) olarak projeye entegre edilmiştir.
-   * *Link:* [wikitext-2-raw-v1 (Hugging Face)](https://huggingface.co/datasets/wikitext)
+Kaggle DAIGT Veri Seti: Yapay zeka ve insan tarafından yazılmış genel metinleri içerir.
+Bağlantı: [Yunij/kaggle-comp-daigt (Hugging Face)](https://huggingface.co/datasets/Yunij/kaggle-comp-daigt)
+
+Wikitext (Wikipedia) Veri Seti: Modelin resmi, akademik ve ciddi dili yapay zeka sanmasını engellemek amacıyla, dengeleyici (gerçek insan metni) olarak projeye entegre edilmiştir. Kütüphane güncellemeleri ve veri hacmini artırmak adına Salesforce/wikitext veri setinin wikitext-103-raw-v1 sürümü kullanılarak sisteme 10.000 adet uzun ve formel insan makalesi enjekte edilmiştir.
+Bağlantı: https://huggingface.co/datasets/Salesforce/wikitext
 
 ---
 
