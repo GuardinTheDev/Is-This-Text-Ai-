@@ -1,5 +1,5 @@
 # Is-This-Text-Ai-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GuardinTheDev/Is-This-Text-Ai-/blob/Model-E%C4%9Fitimi/ModelE%C4%9Fitimi.ipynb)
+[![Open In Colab](https://colab.research.google.com/github/GuardinTheDev/Is-This-Text-Ai-/blob/main/Is-This-This-Text-AI.ipynb#scrollTo=i12K8uioGHDb)
 
 #  Yapay Zeka Metin Detektörü (AI Text Detector)
 
