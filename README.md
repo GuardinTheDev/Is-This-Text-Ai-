@@ -50,9 +50,8 @@ Projeyi kendi bilgisayarınızda veya Google Colab üzerinde çalıştırmak iç
 
 **Adım 2: GPU'yu Aktif Edin (Önemli)** Eğer model eğtilmek isteniyorsa "Model Eğitim" bloğunda "YENIDEN_EGIT = False" kısmını "True" yapaarak modeli eğitebilirsiniz.Modelin hızlı çalışması için Colab açıldığında üst menüden **Çalışma Zamanı (Runtime) > Çalışma Zamanı Türünü Değiştir (Change runtime type)** seçeneğine tıklayın. Donanım Hızlandırıcıyı **T4 GPU** olarak seçip kaydedin.
 
-Not:Model 50-100 kelimelik kelime bandında daha yüksek isabet oranı sağlamaktadır
-
-
 **Adım 3: Programı Başlatın** * Üst menüden **Çalışma Zamanı > Tümünü Çalıştır (Run all)** seçeneğine tıklayın.
 * Eğer Google Drive bağlantısı için izin isterse onaylayın.
 * Kod otomatik olarak kütüphaneleri kuracak, model dosyalarını indirecek ve son hücrede test yapabileceğiniz tıklanabilir bir **Gradio Web Arayüzü (Live Link)** oluşturacaktır.
+
+Not:Model 50-100 kelimelik kelime bandında daha yüksek isabet oranı sağlamaktadır
