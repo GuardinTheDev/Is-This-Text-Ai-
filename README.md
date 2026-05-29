@@ -3,7 +3,7 @@
 
 #  Yapay Zeka Metin Detektörü (AI Text Detector)
 
-Bu proje, verilen bir metnin yapay zeka tarafından mı yoksa gerçek bir insan tarafından mı yazıldığını tespit etmek amacıyla geliştirilmiş bir Derin Öğrenme (Deep Learning) modelidir. Projede `DistilBERT` mimarisi kullanılmış olup, modelin ezber yapmasını (dataset bias) önlemek amacıyla farklı kaynaklardan gelen veriler harmanlanarak eğitilmiştir.
+**Bu proje, verilen bir metnin yapay zeka tarafından mı yoksa gerçek bir insan tarafından mı yazıldığını tespit etmek amacıyla geliştirilmiş bir Derin Öğrenme (Deep Learning) modelidir. Projede `DistilBERT` mimarisi kullanılmış olup, modelin ezber yapmasını (dataset bias) önlemek amacıyla farklı kaynaklardan gelen veriler harmanlanarak eğitilmiştir.**
 ---
 
 ## 📂 Kullanılan Veri Setleri
