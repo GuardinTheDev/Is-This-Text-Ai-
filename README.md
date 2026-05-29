@@ -4,7 +4,6 @@
 #  Yapay Zeka Metin Detektörü (AI Text Detector)
 
 Bu proje, verilen bir metnin yapay zeka tarafından mı yoksa gerçek bir insan tarafından mı yazıldığını tespit etmek amacıyla geliştirilmiş bir Derin Öğrenme (Deep Learning) modelidir. Projede `DistilBERT` mimarisi kullanılmış olup, modelin ezber yapmasını (dataset bias) önlemek amacıyla farklı kaynaklardan gelen veriler harmanlanarak eğitilmiştir.
-
 ---
 
 ## 📂 Kullanılan Veri Setleri
@@ -50,6 +49,9 @@ Projeyi kendi bilgisayarınızda veya Google Colab üzerinde çalıştırmak iç
 **Projeyi Colab'da Açın:** En yukarıdaki butona tıklayarak projenin kodlarını doğrudan Google Colab üzerinde açabilirsiniz.
 
 **Adım 2: GPU'yu Aktif Edin (Önemli)** Eğer model eğtilmek isteniyorsa "Model Eğitim" bloğunda "YENIDEN_EGIT = False" kısmını "True" yapaarak modeli eğitebilirsiniz.Modelin hızlı çalışması için Colab açıldığında üst menüden **Çalışma Zamanı (Runtime) > Çalışma Zamanı Türünü Değiştir (Change runtime type)** seçeneğine tıklayın. Donanım Hızlandırıcıyı **T4 GPU** olarak seçip kaydedin.
+
+Not:Model 50-100 kelimelik kelime bandında daha yüksek isabet oranı sağlamaktadır
+
 
 **Adım 3: Programı Başlatın** * Üst menüden **Çalışma Zamanı > Tümünü Çalıştır (Run all)** seçeneğine tıklayın.
 * Eğer Google Drive bağlantısı için izin isterse onaylayın.
