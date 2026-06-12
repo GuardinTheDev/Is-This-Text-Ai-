@@ -79,12 +79,10 @@ Is-This-Text-Ai-/
 ├── Is-This-This-Text-AI.ipynb   # Ana model: veri hazırlama, eğitim, Gradio arayüzü
 ├── Tokenizer.ipynb               # Yardımcı notebook: tokenizasyon ve metin metrikleri
 │                                 # (Perplexity, Burstiness, Flesch-Kincaid hesaplama)
-├── newDataset                    # Veri seti referans dosyası
+├
 ├── requirements.txt              # Python bağımlılıkları
-├── .env.example                  # Ortam değişkenleri şablonu
-├── sample_data/
-│   ├── ai_samples.txt            # Örnek yapay zeka metinleri
-│   └── human_samples.txt         # Örnek insan metinleri
+├
+├─
 └── README.md                     # Bu dosya
 ```
 
