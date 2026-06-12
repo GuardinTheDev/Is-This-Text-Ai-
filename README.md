@@ -6,7 +6,6 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GuardinTheDev/Is-This-Text-Ai-/blob/main/Is-This-This-Text-AI.ipynb)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/)
 
 Bu proje, verilen bir metnin **yapay zeka tarafından mı** yoksa **gerçek bir insan tarafından mı** yazıldığını tespit etmek amacıyla geliştirilmiş bir Derin Öğrenme modelidir. DistilBERT mimarisi üzerine fine-tune edilmiş olan model, Gradio arayüzü sayesinde kolayca test edilebilir.
