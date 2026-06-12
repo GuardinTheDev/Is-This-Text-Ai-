@@ -303,9 +303,6 @@ Veritabanı kurulum adımı gerekmez.
 **S: Model Türkçe metinlerde de çalışır mı?**
 A: Model İngilizce (`distilbert-base-uncased`) eğitilmiştir. Türkçe metinlerde sonuçlar güvenilir olmayabilir. Türkçe için `dbmdz/bert-base-turkish-cased` gibi bir model tercih edilmelidir.
 
-**S: Ekran kaydı mevcut mu?**
-A: Projeyi bilgisayarınızda Colab üzerinden açıp adım adım çalıştırdığınızı gösteren kısa bir ekran kaydı yakında `demo.gif` olarak eklenecektir.
-
 **S: `gdown` indirme başarısız olursa ne yapmalıyım?**
 A: Notebook içindeki `YENIDEN_EGIT = False` satırını `True` yaparak modeli baştan eğitebilirsiniz.
 
