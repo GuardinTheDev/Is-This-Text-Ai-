@@ -71,37 +71,6 @@ Bu proje, verilen bir metnin **yapay zeka tarafından mı** yoksa **gerçek bir 
 | CUDA (isteğe bağlı) | 11.8+ |
 | Google Colab | Ücretsiz T4 GPU yeterlidir |
 
-# ============================================================
-# Yapay Zeka Metin Detektörü — Python Bağımlılıkları
-# Kurulum: pip install -r requirements.txt
-# ============================================================
-
-# ---- Temel Derin Öğrenme ----
-torch>=2.0.0
-torchvision>=0.15.0
-
-# ---- Hugging Face Ekosistemi ----
-transformers>=4.30.0
-datasets>=2.12.0
-tokenizers>=0.13.0
-
-# ---- Gradio Arayüzü ----
-gradio>=3.40.0
-
-# ---- Model İndirme ----
-gdown>=4.7.0
-
-# ---- Metrik Hesaplama ----
-scikit-learn>=1.2.0
-numpy>=1.24.0
-
-# ---- Notebook Ortamı ----
-jupyter>=1.0.0
-notebook>=6.5.0
-ipywidgets>=8.0.0
-
-# ---- Yardımcı ----
-tqdm>=4.65.0
 
 ## 📂 Klasör Yapısı
 
