@@ -235,10 +235,9 @@ computers to solve complex mathematical problems at unprecedented speeds.
 
 ### İnsan Tarafından Yazılmış Metin Örneği
 ```
-Dün akşam eski bir arkadaşımla kahve içtik. Çok uzun zaman olmuştu görüşmeyeli,
-tam olarak kaç yıl geçtiğini bile hatırlamıyordum. Kafede oturduğumuzda ilk önce
-garip bir sessizlik oldu ama sonra her şey eskisi gibi aktı. Bazı insanlarla
-böyledir işte, yıllar geçse de bağlantı kaybolmuyor.
+Last night I had coffee with an old friend. It had been so long since we'd seen each other, I couldn't even remember exactly how many years had passed.
+ When we sat in the cafe, there was an awkward silence at first, but then everything flowed as usual. That's how it is with some people;
+ even after years, the connection doesn't disappear.
 ```
 **Beklenen Sonuç:** İnsan Tarafından Yazılmış 👨‍💻 (~%70–80 İnsan olasılığı)
 
