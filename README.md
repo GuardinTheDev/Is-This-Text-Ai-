@@ -309,6 +309,4 @@ A: Colab ücretsiz hesaplarda Gradio `share=True` linki birkaç saate kadar akti
 
 ---
 
-## 📜 Lisans
 
-Bu proje MIT lisansı ile lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakınız.
