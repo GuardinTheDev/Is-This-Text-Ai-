@@ -23,7 +23,6 @@ Bu proje, verilen bir metnin **yapay zeka tarafından mı** yoksa **gerçek bir 
 - [Kullanılan Kütüphaneler](#-kullanılan-kütüphaneler)
 - [Kurulum ve Çalıştırma](#-kurulum-ve-çalıştırma)
   - [Yöntem 1: Google Colab (Önerilen)](#yöntem-1-google-colab-önerilen)
-  - [Yöntem 2: Yerel Kurulum](#yöntem-2-yerel-kurulum)
 - [Örnek Veriler](#-örnek-veriler)
 - [Model Hakkında](#-model-hakkında)
 - [Veritabanı Bilgisi](#-veritabanı-bilgisi)
