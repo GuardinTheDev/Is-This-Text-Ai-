@@ -59,7 +59,8 @@ Bu proje, verilen bir metnin **yapay zeka tarafından mı** yoksa **gerçek bir 
 > ⚠️ **Google Colab kullanıyorsanız** ekstra donanım gerekmez. Ücretsiz T4 GPU, hem eğitim hem tahmin için yeterlidir.
 
 ---
-
+Requiements
+->[requirements.txt](https://github.com/user-attachments/files/28896157/requirements.txt)
 ---
 
 ## 💻 Donanım ve Yazılım Gereksinimleri
